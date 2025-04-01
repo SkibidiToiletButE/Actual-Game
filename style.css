@@ -1,0 +1,7 @@
+button #MoneyButton {
+  text-align: center;
+  border: 3 solid red;
+  background-color: red;
+  color: white;
+  border-radius: 10;
+}
