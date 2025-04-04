@@ -10,21 +10,6 @@ let RebirthCost = 10000
 
 let loop = true
 
-//Game saving
-while (loop === true) {
-    if (localStorage) {
-        localStorage.Money = setItem(Money, Money)
-        localStorage.MoneyPerClick = setItem(MoneyPerClick, MoneyPerClick)
-        
-        localStorage.UpgradeLevel = setItem(UpgradeLevel, UpgradeLevel)
-        localStorage.UpgradeCost = setItem(UpgradeCost, UpgradeCost)
-        
-        localStorage.UpgradeMulti = setItem(UpgradeMulti, UpgradeMulti)
-        localStorage.Rebirths = setItem(Rebirths, Rebirths)
-        localStorage.RebirthCost = setItem(RebirthCost, RebirthCost)
-    }
-}
-
 //Game loading
 window.onload = function Load() {
     if (localStorage) {
@@ -37,6 +22,21 @@ window.onload = function Load() {
         UpgradeMulti = getItem(UpgradeMulti)
         Rebirths = getItem(Rebirths)
         RebirthCost = getItem(RebirthCost)
+    }
+}
+
+//Game saving
+while (loop === true) {
+    if (localStorage) {
+        localStorage.Money = setItem(Money, Money)
+        localStorage.MoneyPerClick = setItem(MoneyPerClick, MoneyPerClick)
+        
+        localStorage.UpgradeLevel = setItem(UpgradeLevel, UpgradeLevel)
+        localStorage.UpgradeCost = setItem(UpgradeCost, UpgradeCost)
+        
+        localStorage.UpgradeMulti = setItem(UpgradeMulti, UpgradeMulti)
+        localStorage.Rebirths = setItem(Rebirths, Rebirths)
+        localStorage.RebirthCost = setItem(RebirthCost, RebirthCost)
     }
 }
            
