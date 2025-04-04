@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 
-<html lang="en">
-  <head>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  
-  <body>
-    <button id="MoneyButton">Click For Money</button>
-  </body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <h1>Money = 
+            <span id="MoneyDisplay">0</span>
+        </h1>
+        <h1>Money Per Click = 
+            <span id="MoneyPerClickDisplay">1</span>
+        </h1>
+        
+        <button type="button" onclick="Click()"><h1>Click For Money</h1></button>
+        
+        <br>
+        <br>
+        
+        <button type="button" onclick="Upgrade()">
+            <h1>Level: 
+                <span id="Level">0</span>
+            </h1>
+            
+            <br>
+
+            <h1>Cost: 
+                <span id="UpgradeCost">10</span>
+            </h1>
+        </button>
+        
+        <br>
+        <br>
+        <button type="button" onclick="Rebirth()">
+            <h1>Rebirth</h1>
+            <h1>Cost = 
+                <span id="RebirthCost">10000</span>
+            </h1>
+            <h1>Rebirths: 
+                <span id="RebirthCount">0</span>
+            </h1>
+        </button>
+    </body>
 </html>
